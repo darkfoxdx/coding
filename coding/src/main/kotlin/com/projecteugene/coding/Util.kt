@@ -13,6 +13,12 @@ fun main(args: Array<String>) {
     val newList =(list1 + list2).sorted().distinct()
     println(newList.joinToString())
     println(mergeArrays(list1, list2).joinToString())
+
+    println(". is " + TreeNodeQ.findMorse("."))
+    println("- is " + TreeNodeQ.findMorse("-"))
+    println("-.- is " + TreeNodeQ.findMorse("-.-"))
+    println("? is " + TreeNodeQ.findMorse("?"))
+    println("?-? is " + TreeNodeQ.findMorse("?-?"))
 }
 
 fun mergeArrays(array1: List<Int>, array2: List<Int>): List<Int> {
